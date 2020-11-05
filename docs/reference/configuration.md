@@ -41,6 +41,8 @@ This reference uses `.` to denote the nesting of values.
 * `blockstore.local.path` `(string: "~/lakefs/data")` - When using the local Block Adapter, which directory to store files in
 * `blockstore.gs.credentials_file` `(string : )` - If specified will be used as a file path of the JSON file that contains your Google service account key
 * `blockstore.gs.credentials_json` `(string : )` - If specified will be used as JSON string that contains your Google service account key (when credentials_file is not set)
+* `blockstore.s3.endpoint` `(string : )` - An optional endpoint URL (hostname only or fully qualified URI) that overrides the default generated endpoint for a client. Required for Minio setup.
+* `blockstore.s3.force_path_style` `(boolean : false)` - Set this to `true` to force the request to use path-style addressing (eg. when using Minio) [path style access](https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html#path-style-access)
 * `blockstore.s3.region` `(string : "us-east-1")` - When using the S3 block adapter, AWS region to use
 * `blockstore.s3.profile` `(string : )` - If specified, will be used as a [named credentials profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
 * `blockstore.s3.credentials_file` `(string : )` - If specified, will be used as a [credentials file](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
